@@ -1,6 +1,6 @@
 // array sum
 
-/*#include <iostream>
+#include <iostream>
 #include <vector>
 using namespace std;
 
@@ -20,10 +20,10 @@ int main(){
 	
 	cout<<"Array sum: "<<sum<<endl;
 	return 0;
-}*/
+}
 
 // When size of array not mentioned the sum of array
-/*#include <iostream>
+#include <iostream>
 #include <vector>
 using namespace std;
 
@@ -44,7 +44,7 @@ int main(){
 	cout<<"Array sum: "<<sum<<endl;
 	return 0;
 }
-*/
+
 
 
 
