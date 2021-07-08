@@ -16,6 +16,9 @@ int main()
             if(arr[i][j]==x){
                 cout<<"Element Found\n";
             }
+            else{
+                cout<<"Element not Found\n";
+            }
         }
     }
 }
