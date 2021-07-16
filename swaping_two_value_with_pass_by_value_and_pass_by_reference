@@ -1,0 +1,42 @@
+//swap doesn't occur in following case pass by value
+#include <bits/stdc++.h>
+
+using namespace std;
+void swap(int a, int b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
+int main()
+{
+    
+    int a= 2;
+    int b = 4;
+    swap(a,b);
+    cout<<a<<" "<<b<<endl;
+
+    
+}
+
+// swap occurs in following case pass by reference
+
+#include <bits/stdc++.h>
+
+using namespace std;
+void swap(int *a, int *b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+int main()
+{
+    
+    int a= 2;
+    int b = 4;
+    int *pa = &a;
+    int *pb = &b;
+    swap(pa,pb);
+    cout<<a<<" "<<b<<endl;
+
+    
+}
