@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+#define ll long long
+#define arr array
+
+int unique(int arr[], int n){
+	int xorsum = 0;
+	for(int i=0; i<n; i++){
+		xorsum  = xorsum^arr[i];
+	}
+	return xorsum;
+}
+
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	
+	int arr[] = {1,2,1,3,2,3,4,4};
+	
+	cout<<unique(arr, 8)<<endl;
+	
+	
+	  
+	
+}
