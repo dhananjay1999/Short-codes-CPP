@@ -1,0 +1,27 @@
+
+#include <bits/stdc++.h>
+
+using namespace std;
+#define ll long long
+#define arr array
+
+void dec(int n){
+	if(n==0){
+		return ;
+	}
+	
+	cout<<n<<endl;
+	dec(n-1);
+}
+int main(){
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	
+	int n;
+	cin>>n;
+	dec(n);
+	return 0;
+	
+	
+	
+}
