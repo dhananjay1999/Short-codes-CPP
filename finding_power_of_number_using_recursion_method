@@ -1,0 +1,25 @@
+
+#include <bits/stdc++.h>
+
+using namespace std;
+#define ll long long
+#define arr array
+
+int power(int n, int p){
+	if(p==0){
+		return 1;
+	}
+	
+	int prevPower = power(n,p-1);
+	return n*prevPower;
+}
+int main(){
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	
+	int n,p;
+	cin>>n>>p;
+	
+	cout<<power(n,p);
+	
+}
