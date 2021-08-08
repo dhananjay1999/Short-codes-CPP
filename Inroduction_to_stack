@@ -1,0 +1,33 @@
+#include <iostream>	
+#include <stack>
+//stack is LIFO collection :)
+using namespace std;	
+void printStackElements(stack<int> stack){
+	while(!stack.empty()){
+		cout<<stack.top()<<endl;
+		stack.pop();
+	}
+}
+
+int main()	
+{	
+    //empty, size, push, pop, top
+    stack<int> numbersStack;
+    
+    numbersStack.push(1);
+    numbersStack.push(2);
+    numbersStack.push(3);
+    numbersStack.push(4);
+    
+    
+//    if(numbersStack.empty())
+//	    cout<< "Stack is empty \n";
+//	else
+//	    cout<< "Stack is not empty \n";
+//	cout<<"Stack size is "<<numbersStack.size()<<endl;
+//	
+    printStackElements(numbersStack);
+	
+    
+    
+}
