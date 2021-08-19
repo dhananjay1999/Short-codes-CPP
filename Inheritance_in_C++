@@ -1,0 +1,34 @@
+#include <iostream>
+
+
+using namespace std;
+
+class Person{
+public:
+	string name;
+	int age;
+	void setName(string iname){name=iname;
+	}
+	void setAge(int iage){age = iage;
+	}
+};
+
+class Student:public Person{
+	public: 
+	int id;
+	void setId(int iid){id =iid;
+	}
+	void introduce(){
+		cout<<"hi, I am "<<name<<" and I am "<<age<<" years old "<<endl<<"My student Id is "<<id<<"."<<endl;
+	}
+};
+int main(){
+	
+	Student dhananjay;
+	dhananjay.setName("Dhananjay");
+	dhananjay.setAge(22);
+	dhananjay.setId(147);
+	
+	dhananjay.introduce();
+	
+}
