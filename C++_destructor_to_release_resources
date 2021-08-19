@@ -1,0 +1,43 @@
+#include <iostream>
+#include <vector>
+#include<string>
+#include <cmath>
+
+using namespace std;
+
+class Human{
+private:
+	string *name;
+	int *age;
+public:
+	Human(string iname, int iage){
+		name = new string; 
+		age = new int;
+		
+		*name = iname;
+		*age = iage;
+		
+	}
+	
+	void display(){
+		cout<<"Hi i am "<<*name<<" and I am "<<*age<<" years old"<<"\n";
+		
+	}
+	
+	~Human(){
+		delete name;
+		delete age;
+		cout<< "all memories are released"<<"\n";
+	}
+	
+};
+int main(){
+	Human *dhananjay = new Human("Dhananjay", 22);
+	dhananjay->display();
+	delete dhananjay;
+    
+}
+    
+	
+
+  
