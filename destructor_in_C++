@@ -1,0 +1,23 @@
+#include <iostream>
+#include <vector>
+#include<string>
+#include <cmath>
+
+using namespace std;
+
+class Human{
+public:
+	Human(){
+		cout<<"constructor called"<<"\n";
+		
+	}
+	~Human(){
+		cout<<"destructor called"<<endl;
+	}
+};
+int main(){
+    Human *dhananjay;
+    dhananjay = new Human();
+    delete dhananjay;
+}
+    
