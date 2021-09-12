@@ -1,0 +1,25 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+
+int main(){
+	
+	fstream myFile;
+	myFile.open("main.txt", ios::out); // write mode first time
+	if(myFile.is_open()){
+		myFile << "Hello \n";
+		myFile << "This is second line \n";
+		myFile.close();
+	}
+    myFile.open("main.txt", ios::app); // write mode for appending time and if want to edit previoius the use ios out and write
+	if(myFile.is_open()){
+		myFile << "Hello2 \n";
+		myFile << "This is second line \n";
+		myFile.close();
+	} 
+	
+	
+	
+	
+}
